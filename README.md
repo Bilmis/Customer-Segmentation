@@ -1,5 +1,5 @@
 ﻿# **Customer Segmentation App 🛒**
-THE APP is available on My Streamlit cloud account go check it out!!
+The app is available on My Streamlit cloud account go check it out!!
 ## Overview
 
 This project involves customer segmentation for an e-commerce company using machine learning techniques. The goal is to categorize customers into different segments based on their demographic and behavioral data. The project uses a **K-Means clustering** algorithm to segment customers and a **Streamlit** app to deploy the model and make predictions interactively. 🤖💡

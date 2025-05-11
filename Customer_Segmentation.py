@@ -56,7 +56,7 @@ new_customer_encoded = new_customer_encoded[one_hot_columns]
 new_customer_scaled = scaler.transform(new_customer_encoded)
 
 # Predict the cluster when the "Predict" button is pressed
-if st.button("Predict Cluster"):
+if st.button("Predict Customer Type"):
     cluster_prediction = kmeans_model.predict(new_customer_scaled)
 
     # Show the predicted cluster

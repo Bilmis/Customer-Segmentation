@@ -60,19 +60,19 @@ if st.button("Predict Cluster"):
     cluster_prediction = kmeans_model.predict(new_customer_scaled)
 
     # Show the predicted cluster
-    st.write(f"### 🚀 Predicted Customer Segment: **Cluster {cluster_prediction[0]}**")
+    st.write(f"### 🚀 Predicted Customer Segment: **Customer Type-{cluster_prediction[0]+1}**")
 
     # Show some characteristics of the predicted cluster
     st.write(f"### Cluster Characteristics:")
 
     # Define some cluster descriptions (based on your analysis of cluster centers)
     cluster_descriptions = {
-        0: "Cluster 0: Primarily young customers who purchase small amounts and rarely use discounts. They have a neutral satisfaction level.",
-        1: "Cluster 1: Older customers who make larger purchases, are more likely to use discounts, and are generally satisfied.",
-        2: "Cluster 2: Young customers with high purchase frequency but low satisfaction, tend to buy many items at a time.",
-        3: "Cluster 3: Customers with high satisfaction, mostly from the 'Gold' membership tier, who purchase in moderate amounts.",
-        4: "Cluster 4: Customers who make purchases infrequently, rarely use discounts, and tend to be in the 'Bronze' membership group.",
-        5: "Cluster 5: Customers with frequent small purchases, but use discounts often and show moderate satisfaction."
+        0: "Customer Type-1: Primarily young customers who purchase small amounts and rarely use discounts. They have a neutral satisfaction level.",
+        1: "Customer Type-2: Older customers who make larger purchases, are more likely to use discounts, and are generally satisfied.",
+        2: "Customer Type-3: Young customers with high purchase frequency but low satisfaction, tend to buy many items at a time.",
+        3: "Customer Type-4: Customers with high satisfaction, mostly from the 'Gold' membership tier, who purchase in moderate amounts.",
+        4: "Customer Type-5: Customers who make purchases infrequently, rarely use discounts, and tend to be in the 'Bronze' membership group.",
+        5: "Customer Type-6: Customers with frequent small purchases, but use discounts often and show moderate satisfaction."
     }
 
     # Show description based on the predicted cluster

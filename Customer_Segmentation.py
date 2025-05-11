@@ -63,7 +63,7 @@ if st.button("Predict Customer Type"):
     st.write(f"### 🚀 Predicted Customer Segment: **Customer Type-{cluster_prediction[0]+1}**")
 
     # Show some characteristics of the predicted cluster
-    st.write(f"### Cluster Characteristics:")
+    st.write(f"### Customer Characteristics:")
 
     # Define some cluster descriptions (based on your analysis of cluster centers)
     cluster_descriptions = {
